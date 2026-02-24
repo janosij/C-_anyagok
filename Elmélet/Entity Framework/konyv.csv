@@ -1,0 +1,154 @@
+id;cim;szerzoId;helyezes
+1;1984;30;4
+2;A 22-es csapdája;49;44
+3;A da Vinci-kód;10;64
+4;A Diadalív árnyékában;17;70
+5;A fekete város;71;56
+6;A funtineli boszorkány;101;25
+7;A gyertyák csonkig égnek;62;32
+8;A Gyurűk Ura I–III.;39;8
+9;A három testor;4;28
+10;A katedrális;54;69
+11;A két Lotti;16;21
+12;A kis herceg;5;7
+13;A koszívű ember fiai;48;14
+14;A láthatatlan ember;29;38
+15;A Legyek Ura;102;46
+16;A lét elviselhetetlen könnyusége;72;92
+17;A Mester és Margarita;68;10
+18;A nap szerelmese;9;40
+19;A neveletlen hercegno naplója;66;57
+20;A nyomorultak;100;23
+21;A Pál utcai fiúk;73;2
+22;A Pendragon legenda;93;81
+23;A rózsa neve;97;61
+24;A tizennégy karátos autó;84;47
+25;A varázshegy;96;90
+26;A vörös oroszlán;92;95
+27;Ábel a rengetegben;95;13
+28;Abigél;91;3
+29;Adjátok vissza a hegyeimet!;101;31
+30;Akiért a harang szól;18;53
+31;Állítsátok meg Terézanyut!;83;60
+32;Anna Karenina;60;76
+33;Apák könyve;98;80
+34;Aranyecset;9;48
+35;Aranykoporsó;74;55
+36;Árvácska;75;33
+37;Az ajtó;91;93
+38;Az alkimista;82;85
+39;Az arany ember;48;5
+40;Az öreg halász és a tenger;18;20
+41;Bezzeg az én idomben;21;82
+42;Bogáncs;22;45
+43;Búcsú a fegyverektol;18;75
+44;Bun és bűnhodés;24;34
+45;Büszkeség és balítélet;42;54
+46;Édentol keletre;46;65
+47;Édes Anna;57;43
+48;Egri csillagok;29;1
+49;Egy magyar nábob;48;72
+50;Egy polgár vallomásai;62;94
+51;Elfújta a szél;63;22
+52;Für Elisé;91;86
+53;Galaxis útikalauz stopposoknak;13;78
+54;Gergo és az álomfogók;7;83
+55;Háború és béke;60;52
+56;Harmonia caelestis;19;100
+57;Harry Potter és a bölcsek köve;38;9
+58;Harry Potter és a Fonix Rendje;38;26
+59;Harry Potter és a Titkok Kamrája;38;17
+60;Harry Potter és az azkabani fogoly;38;16
+61;Ida regénye;29;89
+62;Indul a bakterház;85;15
+63;Iskola a határon;79;71
+64;Iszony;77;74
+65;Jadviga párnája;103;88
+66;Jane Eyre;8;36
+67;József és testvérei;96;96
+68;Kard és kasza;101;68
+69;Kincskereso kisködmön;74;29
+70;Lassie hazatér;15;49
+71;Légy hu magadhoz;15;73
+72;Légy jó mindhalálig;75;18
+73;Malevil;86;84
+74;Mesterségem a halál;86;63
+75;Micimackó;3;6
+76;Monte Cristo grófja;4;24
+77;Ne féljetek;47;97
+78;Oroszlánkölykök;36;67
+79;PetePite;78;99
+80;Piszkos Fred, a kapitány;84;37
+81;Pokolbéli víg napjaim;20;98
+82;Quo vadis;34;30
+83;Régimódi történet;91;91
+84;Robinson Crusoe;11;62
+85;Sorstalanság;56;27
+86;Švejk;43;66
+87;Száz év magány;27;12
+88;Szent Péter esernyoje;71;35
+89;Szerelem a kolera idején;27;79
+90;Téli berek;22;51
+91;Tóték;80;58
+92;Tüskevár;22;11
+93;Utas és holdvilág;93;87
+94;Utazás a koponyám körül;52;77
+95;Üvölto szelek;14;39
+96;Virágot Algernonnak;12;59
+97;Vörös és fekete;89;41
+98;Vuk;22;19
+99;Winnetou;53;50
+100;Zabhegyezo;44;42
+101;A bengáli tuz;26;101
+102;A dzsungel könyve;87;101
+103;A feleségem története;25;101
+104;A gólyakalifa;6;101
+105;A három testor Afrikában;84;101
+106;A Karamazov testvérek;24;101
+107;A kicsik;61;101
+108;A Négyszögletu Kerek Erdo;58;101
+109;A ragyogás;90;101
+110;A sziget;86;101
+111;A vadon szava;40;101
+112;A Végtelen Történet;67;101
+113;Alapítvány és Birodalom;37;101
+114;Állatfarm;30;101
+115;Anya csak egy van;98;101
+116;Az elátkozott királyok;65;101
+117;Az ötödik pecsét;88;101
+118;Bambi;23;101
+119;Beszterce ostroma;71;101
+120;Családom és egyéb állatfajták;31;101
+121;Csendes Don;69;101
+122;Csontbrigád;84;101
+123;Égeto Eszter;77;101
+124;Egymás szemében;94;101
+125;Elvész a nyom;101;101
+126;Emil és a detektívek;16;101
+127;Emlékiratok könyve;76;101
+128;Erdély;75;101
+129;Esoisten siratja Mexikót;81;101
+130;Exodus;59;101
+131;Fekete gyémántok;48;101
+132;Für Elise;91;101
+133;Goriot apó;35;101
+134;Harmonia cćlestis;19;101
+135;Isten rabjai;29;101
+136;Karnevál;32;101
+137;Koldus és királyfi;64;101
+138;Különös házasság;71;101
+139;Mesemaraton;99;101
+140;Most és mindörökké;41;101
+141;Nemo kapitány;50;101
+142;Pacsirta;57;101
+143;Pete Pite;78;101
+144;Pillangó;33;101
+145;Réztábla a kapu alatt;1;101
+146;Rokonok;75;101
+147;Száll a kakukk fészkére;55;101
+148;Szinuhe;70;101
+149;Titkok egy régi kertben;51;101
+150;Tíz kicsi néger;2;101
+151;Tom Sawyer kalandjai;64;101
+152;Védett férfiak;86;101
+153;Vidravas;28;101
