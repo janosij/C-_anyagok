@@ -41,6 +41,9 @@ namespace T_Kosar_Tesztprojekt
         }
 
         // több termék tesztje 20000 alatt, helyes-e az összeadás és a kedvezmény?
+        // FONTOS! Egyszerre CSAK EGY DOLGOT Teszteljünk!!!
+        // Ha elbukik a teszt, akkor nem tudjuk majd pontosan ebből az egyből,
+        // hogy az összeadás volt-e a rossz vagy a kedvezmény?!!!
         [Fact]
         public void HaromTetel_Vegosszeg_Helyes()
         {
@@ -56,6 +59,9 @@ namespace T_Kosar_Tesztprojekt
         }
 
         // több termék tesztje 20000 felett, helyes-e az összeadás és a kedvezmény?
+        // Ahogy az előbb írtam, egyszerre CSAK EGY DOLGOT teszteljünk!!!
+        // De ha már előtte teszteltük az összeadásra és a szorzásra,
+        // akkor jöhet a kedvezményre az összetett teszt is!!!
         [Fact]
         public void HaromTetel_KedvezmenyAlkalmazva()
         {
@@ -71,31 +77,50 @@ namespace T_Kosar_Tesztprojekt
             Assert.Equal(20700, result);
         }
 
-        //
-        [Theory]        
-        [InlineData(10000, 1, 2000, 2, 3000, 1, 17000)]
-        [InlineData(10000, 1, 8000, 1, 5000, 1, 20700)]
-        // és a határok tesztelése
-        [InlineData(0, 0, 0, 0, 0, 0, 0)]
-        [InlineData(1000, 1, 2000, 8, 3000, 1, 20000)]
-        [InlineData(1001, 1, 2000, 8, 3000, 1, 18001)]
+        // nézzük Theory-val, hogy több tesztet is lefuttassunk egy kóddal.
+        [Theory]
+            [InlineData(10000, 1, 2000, 2, 3000, 1, 17000)]
+            [InlineData(10000, 1, 8000, 1, 5000, 1, 20700)]
+            // és a határok tesztelése
+            [InlineData(0, 0, 0, 0, 0, 0, 0)]
+            [InlineData(1000, 1, 2000, 8, 3000, 1, 20000)]
+            [InlineData(1001, 1, 2000, 8, 3000, 1, 18001)]
 
-        public void HaromTetel_Teszt(
-            int ar1, int db1,
-            int ar2, int db2,
-            int ar3, int db3,
-            int expected)
+            public void HaromTetel_Teszt(
+                int ar1, int db1,
+                int ar2, int db2,
+                int ar3, int db3,
+                int expected)
+            {
+                var kosar = new Kosar();
+
+                kosar.Hozzaad(new Tetel { Ar = ar1, Darab = db1 });
+                kosar.Hozzaad(new Tetel { Ar = ar2, Darab = db2 });
+                kosar.Hozzaad(new Tetel { Ar = ar3, Darab = db3 });
+
+                var result = kosar.Vegosszeg();
+
+                Assert.Equal(expected, result);
+            }
+
+        // nézzük a legnagyobb elkövethető hibát: implementációt másolunk a tesztbe!
+        // NE TEGYÜK SOHA!!!
+        // Így a teszt teljesen értelmetlen, mert ugyanazt a kódot tartalmazza,
+        // mint amit tesztelni szeretnénk, tehát ÁTMEGY a teszten akkor is, ha hibás a logika!!!
+        // A teszt ne ismételje a logikát.
+        [Fact]
+        public void EgyTermek_TILOS()
         {
             var kosar = new Kosar();
-
-            kosar.Hozzaad(new Tetel { Ar = ar1, Darab = db1 });
-            kosar.Hozzaad(new Tetel { Ar = ar2, Darab = db2 });
-            kosar.Hozzaad(new Tetel { Ar = ar3, Darab = db3 });
+            Tetel x = new Tetel { Nev = "Felmosóvödör", Ar = 10000, Darab = 2 };
+            kosar.Hozzaad(x);
 
             var result = kosar.Vegosszeg();
 
-            Assert.Equal(expected, result);
+            Assert.Equal(x.Ar * x.Darab, result);
         }
+
+
 
     }
 }
