@@ -60,10 +60,7 @@ namespace SzamologepTeszt
             var sz = new Szamologep();
             var result = sz.Osszeadas(a, b);
             Assert.Equal(expected, result);
-        }
-
-
-        [ClassData]
+        }               
     }
 
 }
