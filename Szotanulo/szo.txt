@@ -1,0 +1,3 @@
+﻿macska,cat
+kutya,dog
+egér,mouse

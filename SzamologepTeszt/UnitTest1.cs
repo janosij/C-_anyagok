@@ -32,6 +32,38 @@ namespace SzamologepTeszt
             Assert.Throws<DivideByZeroException>(() => sz.Osztas(10, 0));
         }
 
+        // Egyszerre több érték tesztelése (paraméterezett teszt)
+        [Theory]
+        [InlineData(5, 3, 8)]
+        [InlineData(-11, 11, 0)]
+        [InlineData(-8, -14, -22)]
+        public void OsszeadasTobbTesztesettel(int a, int b, int expected)
+        {
+            var sz = new Szamologep();
+
+            var result = sz.Osszeadas(a, b);
+
+            Assert.Equal(expected, result);
+        }
+
+        public static IEnumerable<object[]> TestData =>
+            new List<object[]>
+            {
+                new object[] { 2, 3, 5 },
+                new object[] { 4, 6, 10 }
+            };
+
+        [Theory]
+        [MemberData(nameof(TestData))]
+        public void OsszeadasKomplex(int a, int b, int expected)
+        {
+            var sz = new Szamologep();
+            var result = sz.Osszeadas(a, b);
+            Assert.Equal(expected, result);
+        }
+
+
+        [ClassData]
     }
-    
+
 }
