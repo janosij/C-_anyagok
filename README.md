@@ -15,8 +15,11 @@
 - és a kérdéseket is a lehető legegyszerűbben válaszolom meg (szerintem)
 - [LINK a feladathoz](https://www.oktatas.hu/kozneveles/erettsegi/feladatsorok/emelt_szint_2025tavasz/emelt_11nap)
 
-## A Unit teszteket tartalmazó projektek T betűvel kezdődnek majd
+## Unit tesztek
+- a Unit teszteket tartalmazó projektek T betűvel kezdődnek majd
 - az első ilyet elrontottam, így itt a tesztelendő osztályt tartalmazó projekt: **Unit_teszt_01**, a tesztprojekt: **SzamologepTeszt**
+- a Kosar teszt egy könnyű és szerintem érthető bemutatása egy valós, egyszerű esetnek
+- **fontos**: tesztelni nem azt kell, hogy mi az értéke a propertynek, hanem azt, hogy helyesen működik-e az üzleti logika!!!
 
 ## A Pizza6 projekt egy apró pizzarendelő alkalmazás JSON-be mentéssel - visszatöltéssel
 
