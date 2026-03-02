@@ -104,6 +104,7 @@ namespace Lottohuzas
                     }
 
                     lsb.Items.Add(sz);
+                    // ezt meg lehetne csinálni egy tömbbel is, de így érthetőbb
                     int otos = 0;
                     int negyes = 0;
                     int harmas = 0;
