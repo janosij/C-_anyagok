@@ -16,7 +16,7 @@
 - [LINK a feladathoz](https://www.oktatas.hu/kozneveles/erettsegi/feladatsorok/emelt_szint_2025tavasz/emelt_11nap)
 
 ## Lottóhúzás nevű projekt (érdemes átfutni versenyre; WPF grafikus elemeinek létrehozása kódból!)
-- a program nem rossz példa arra (bár régen csináltam), hogy hozzunk létre programból vezérlőket, 10 percet megér az átnézése!
+- a program nem rossz példa arra (bár régen csináltam), hogy hozunk létre programból vezérlőket, 10 percet megér az átnézése!
 - egy ötöslottó húzást imitál valós adatokkal
 - ezen a linken található az eddig húzott nyerőszámok összessége: [Nyerőszámok](https://bet.szerencsejatek.hu/cmsfiles/otos.csv)
 - a letöltött fájlt kell változtatás nélkül a projekt mappájába másolni
