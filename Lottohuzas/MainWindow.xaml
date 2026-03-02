@@ -1,0 +1,45 @@
+﻿<Window x:Class="Lottohuzas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lottohuzas"
+        mc:Ignorable="d"
+        Title="Lottó" Height="500" Width="800" ResizeMode="NoResize">
+    <Grid x:Name="gr">
+        <ListBox x:Name="lsb" Width="300" Height="25" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,300,0,0" />
+        <TextBlock HorizontalAlignment="Center" Margin="0,20,0,0" TextWrapping="Wrap" Text="Lottóhúzás" FontSize="25" FontWeight="Bold" VerticalAlignment="Top"/>
+        <Button Content="Reset" Width="100" HorizontalAlignment="Left" Margin="628,300,0,0" VerticalAlignment="Top" Height="25" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="128,303,0,0" TextWrapping="Wrap" Text="A húzott számok:" VerticalAlignment="Top"  Height="25"/>
+        <Grid Margin="128,367,72,33">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock TextWrapping="Wrap" Text="Öttalálatosok száma:"/>
+            <TextBlock TextWrapping="Wrap" Text="Négytalálatosok száma:" Grid.Column="2"/>
+            <TextBlock TextWrapping="Wrap" Text="Háromtalálatosok száma:" Grid.Column="0" Grid.Row="1"/>
+            <TextBlock TextWrapping="Wrap" Text="Kéttalálatosok száma:" Grid.Column="2" Grid.Row="1"/>
+            <TextBlock TextWrapping="Wrap" Text="Egytalálatosok száma:" Grid.Column="0" Grid.Row="2"/>
+            <TextBlock TextWrapping="Wrap" Text="Nullatalálatosok száma:" Grid.Column="2" Grid.Row="2"/>
+
+            <TextBlock x:Name="tbotos" TextWrapping="Wrap" Text="" Grid.Column="1" Foreground="Red" FontWeight="Bold"/>
+            <TextBlock x:Name="tbnegyes" TextWrapping="Wrap" Text="" Grid.Column="3" Grid.Row="0"/>
+            <TextBlock x:Name="tbharmas" TextWrapping="Wrap" Text="" Grid.Column="1" Grid.Row="1"/>
+            <TextBlock x:Name="tbkettes" TextWrapping="Wrap" Text="" Grid.Column="3" Grid.Row="1"/>
+            <TextBlock x:Name="tbegyes" TextWrapping="Wrap" Text="" Grid.Column="1" Grid.Row="2"/>
+            <TextBlock x:Name="tbnullas" TextWrapping="Wrap" Text="" Grid.Column="3" Grid.Row="2"/>
+        </Grid>
+
+
+
+    </Grid>
+
+</Window>
