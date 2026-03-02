@@ -76,30 +76,13 @@
 
             return Math.Max(0, osszeg);
         }
-    }
-
-    /* 
-     A következő dolgokat szeretnénk tesztelni:
-        
-        - Üres kosár → 0
-
-        - Egy termék → helyes szorzás
-
-        - Több termék → összeadás helyes
-
-        - 20 000 alatt → nincs kedvezmény
-
-        - 20 000 felett → 10% kedvezmény
-    */
-
-    // A teszthez létre kell hozni egy xUnit projektet és
-    // referenciának meg kell adni ezt a projektet, hogy elérjük a Kosar osztályt.
+    }    
 
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+           
         }
     }
 }
